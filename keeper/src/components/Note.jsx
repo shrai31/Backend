@@ -1,7 +1,4 @@
 import React from 'react'
-import notes from '../notes'
-
-console.log(notes);
 
 export default function Note(props) {
     return (

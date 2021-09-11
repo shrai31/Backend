@@ -4,7 +4,7 @@ import Footer from './Footer'
 import './App.css';
 import notes from '../notes'
 
-console.log(notes);
+// console.log(notes);
 
 function App() {
   return (
