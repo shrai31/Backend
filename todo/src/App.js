@@ -11,13 +11,13 @@ function App() {
   }
 
   function addItem() {
-    setItems(prev => {
-      return [...prev, inputText];
+    setItems(prevItems => {
+      return [...prevItems, inputText];
     });
     setItems("");
   }
 
-  
+
 
   return (
     <div className="container">
@@ -26,8 +26,8 @@ function App() {
       </div>
       <div className="form">
         <input 
-        type="text" 
-        value={inputText}
+        type="text"
+        value={inputText}  
         onChange={handleChange}/>
         <button onClick={addItem}>
           <span>Add</span>
@@ -35,7 +35,7 @@ function App() {
       </div>
       <div>
         <ul>
-        {items.map(todoItem => (
+          {items.map(todoItem => (
             <li>{todoItem}</li>
           ))}
         </ul>
